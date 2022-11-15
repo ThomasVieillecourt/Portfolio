@@ -1,0 +1,17 @@
+.content__container {
+  background-color: $NoirNuit;
+
+  #circle-w-bg {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 40%;
+  }
+
+  #circle-v-bg {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 40%;
+  }
+}

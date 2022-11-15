@@ -1,0 +1,56 @@
+.content--designer {
+  height: 90vh;
+  padding: 4rem 0;
+  position: relative;
+
+  .content--designer-text {
+    padding: 2rem 0 2rem 0;
+
+    h2 {
+      padding: 0 0 1rem 0;
+    }
+
+    p {
+      padding: 0 0 3rem 0;
+    }
+
+    button {
+      font-size: 1.2rem;
+      margin: 0 0 3rem 0;
+
+      i {
+        padding-left: 0.6rem;
+      }
+    }
+  }
+
+  .content--designer-cards {
+    .card {
+      width: 586px;
+      height: 356px;
+
+      background: url("media/Mockup_desktop_V1.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      border-radius: 38px;
+    }
+  }
+
+  #figma-logo {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 240px;
+    pointer-events: none;
+  }
+
+  #switch-logo {
+    position: absolute;
+    bottom: -12%;
+    left: -14%;
+    width: 240px;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  color: #f3f3f3;
+  text-shadow: 4px 4px 4px rgba(17, 17, 17, 0.4);
+  padding: 1.4rem 0 0 0;
+}
+h1 span {
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f3f3f3;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+}
+
+.flux {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RadialGradient {
+  background: rgb(17, 22, 138);
+  background: linear-gradient(320deg, rgba(17, 22, 138, 0.8) 10%, rgba(134, 17, 160, 0.8) 90%);
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  color: #f3f3f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  width: 225px;
+  height: 56px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.4);
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+header nav {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  background: url("media/bg-gradient.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.container .banner__container {
+  padding: 5rem 0 0 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.container .banner__container .banner--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0 0 0;
+}
+.container .banner__container .btn {
+  display: block;
+  margin: 6rem auto;
+  position: relative;
+  z-index: 2;
+}
+.container .banner__container .banner__container--img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .banner__container .banner__container--img img {
+  width: 538px;
+}
+.container .banner__container .banner--social-icons {
+  position: fixed;
+  right: 6%;
+  bottom: 0;
+}
+.container .banner__container .banner--social-icons ul li {
+  list-style: none;
+  margin: 3rem 0 0.6rem 0;
+  cursor: pointer;
+}
+.container .banner__container .banner--social-icons ul li a img {
+  width: 2rem;
+}
+
+.content__container {
+  background-color: #04040f;
+}
+.content__container #circle-w-bg {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 40%;
+}
+.content__container #circle-v-bg {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 40%;
+}
+
+.content--designer {
+  height: 90vh;
+  padding: 4rem 0;
+  position: relative;
+}
+.content--designer .content--designer-text {
+  padding: 2rem 0 2rem 0;
+}
+.content--designer .content--designer-text h2 {
+  padding: 0 0 1rem 0;
+}
+.content--designer .content--designer-text p {
+  padding: 0 0 3rem 0;
+}
+.content--designer .content--designer-text button {
+  font-size: 1.2rem;
+  margin: 0 0 3rem 0;
+}
+.content--designer .content--designer-text button i {
+  padding-left: 0.6rem;
+}
+.content--designer .content--designer-cards .card {
+  width: 586px;
+  height: 356px;
+  background: url("media/Mockup_desktop_V1.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 38px;
+}
+.content--designer #figma-logo {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 240px;
+  pointer-events: none;
+}
+.content--designer #switch-logo {
+  position: absolute;
+  bottom: -12%;
+  left: -14%;
+  width: 240px;
+  pointer-events: none;
+}
+
+.content--developer {
+  height: auto;
+  padding: 4rem 0;
+  position: relative;
+}
+.content--developer .content--developer-text {
+  padding: 2rem 0 2rem 0;
+}
+.content--developer .content--developer-text h2 {
+  padding: 0 0 1rem 0;
+}
+.content--developer .content--developer-text p {
+  padding: 0 0 3rem 0;
+}
+.content--developer .content--developer-text button {
+  font-size: 1.2rem;
+  margin: 0 0 3rem 0;
+}
+.content--developer .content--developer-text button i {
+  padding-left: 0.6rem;
+}
+.content--developer .content--developer-lang ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content--developer .content--developer-lang ul li {
+  list-style: none;
+  color: #f3f3f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.content--developer .content--developer-lang ul li#html:hover {
+  color: #e54c21;
+}
+.content--developer .content--developer-lang ul li#css:hover {
+  color: #0c6fb2;
+}
+.content--developer .content--developer-lang ul li#sass:hover {
+  color: #ce679a;
+}
+.content--developer .content--developer-lang ul li#js:hover {
+  color: #f7e018;
+}
+.content--developer .content--developer-lang ul li#react:hover {
+  color: #61dbfb;
+}
+.content--developer .content--developer-cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 4rem 10rem;
+}
+.content--developer .content--developer-cards .dev--card {
+  background-color: #0c6fb2;
+  width: 100%;
+  height: 360px;
+  border-radius: 38px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.content--developer #phone-logo {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 300px;
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */

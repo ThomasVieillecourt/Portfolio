@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$NoirNuit: #04040f;
+$Blanc: #f3f3f3;
+
+body {
+  height: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  color: $Blanc;
+  text-shadow: 4px 4px 4px rgba(17, 17, 17, 0.4);
+  padding: 1.4rem 0 0 0;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: $Blanc;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: $Blanc;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $Blanc;
+}
+
+.flux {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RadialGradient {
+  background: rgb(17, 22, 138);
+  background: linear-gradient(
+    320deg,
+    rgba(17, 22, 138, 0.8) 010%,
+    rgba(134, 17, 160, 0.8) 90%
+  );
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  color: $Blanc;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  width: 225px;
+  height: 56px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.4);
+}

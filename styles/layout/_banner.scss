@@ -1,0 +1,61 @@
+.container {
+  background: url("media/bg-gradient.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .banner__container {
+    padding: 5rem 0 0 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    .banner--text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 6rem 0 0 0;
+    }
+
+    .btn {
+      display: block;
+      margin: 6rem auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner__container--img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        width: 538px;
+      }
+    }
+
+    .banner--social-icons {
+      position: fixed;
+      right: 6%;
+      bottom: 0;
+
+      ul {
+        li {
+          list-style: none;
+          margin: 3rem 0 0.6rem 0;
+          cursor: pointer;
+
+          a {
+            img {
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
