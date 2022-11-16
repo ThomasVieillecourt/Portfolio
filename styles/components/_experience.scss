@@ -1,0 +1,53 @@
+.content--experience {
+  width: 58vw;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  .exp__content {
+    padding: 0 2rem 5rem 2rem;
+
+    h3::before {
+      content: "";
+      display: inline-block;
+      background-color: $Blanc;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      position: absolute;
+      transform: translateX(-200%) translateY(50%);
+    }
+
+    span {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #747474;
+    }
+
+    p {
+      margin: 1rem 0 0 0;
+      font-size: 1rem;
+    }
+  }
+  #white-line {
+    height: 90%;
+    width: 2px;
+    background-color: $Blanc;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    z-index: 4;
+  }
+
+  #white-square-banner {
+    height: 108px;
+    width: 108px;
+    border-top: 2px solid $Blanc;
+    border-right: 2px solid $Blanc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+  }
+}

@@ -34,6 +34,7 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 2rem;
+  color: #f3f3f3;
 }
 
 a {
@@ -155,7 +156,28 @@ header nav {
   position: absolute;
   z-index: 0;
   right: 0;
-  top: 40%;
+  top: 39%;
+}
+
+footer {
+  height: 24vh;
+}
+footer p {
+  text-align: center;
+}
+footer ul {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+footer ul li {
+  list-style: none;
+  color: #f3f3f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .content--designer {
@@ -272,4 +294,117 @@ header nav {
   right: 2%;
   width: 300px;
   pointer-events: none;
+}
+
+.content--experience {
+  width: 58vw;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.content--experience .exp__content {
+  padding: 0 2rem 5rem 2rem;
+}
+.content--experience .exp__content h3::before {
+  content: "";
+  display: inline-block;
+  background-color: #f3f3f3;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-200%) translateY(50%);
+}
+.content--experience .exp__content span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #747474;
+}
+.content--experience .exp__content p {
+  margin: 1rem 0 0 0;
+  font-size: 1rem;
+}
+.content--experience #white-line {
+  height: 90%;
+  width: 2px;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  z-index: 4;
+}
+.content--experience #white-square-banner {
+  height: 108px;
+  width: 108px;
+  border-top: 2px solid #f3f3f3;
+  border-right: 2px solid #f3f3f3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.content--contact .form--container {
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+}
+.content--contact .form--container h2 {
+  text-align: center;
+}
+.content--contact .form--container .box__form form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+.content--contact .form--container .box__form form label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+.content--contact .form--container .box__form form input {
+  height: 36px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+}
+.content--contact .form--container .box__form form input::-moz-placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content--contact .form--container .box__form form input:-ms-input-placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content--contact .form--container .box__form form input::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content--contact .form--container .box__form form #message {
+  height: 200px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+.content--contact .form--container .box__form form #message::-moz-placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content--contact .form--container .box__form form #message:-ms-input-placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content--contact .form--container .box__form form #message::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.content--contact .form--container .box__form form #btn--form {
+  display: block;
+  margin: 4rem auto;
+  height: 3rem;
+  width: 12rem;
+}
+.content--contact .form--container .box__form form #btn--form i {
+  padding-left: 1rem;
 }/*# sourceMappingURL=style.css.map */
