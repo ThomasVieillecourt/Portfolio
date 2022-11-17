@@ -24,6 +24,11 @@ footer {
         font-weight: 500;
         font-size: 0.8rem;
         padding: 1rem;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+        }
       }
     }
   }

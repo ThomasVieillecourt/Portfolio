@@ -27,11 +27,24 @@
 
   <body>
     <header>
-      <nav>
-        <a href="#graphic">Portfolio</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
+
+      <nav class="sidenav" id="Sidenav">
+        <a href="#" id="closeBtn"><img src="/styles/media/cross.png" alt="cross icon" ></a> 
+
+        <div class="nav_content_container">
+          <a href="#graphic" onclick=closeNav()>Portfolio <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#exp" onclick=closeNav()>Experience <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" onclick=closeNav()>Contact <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="line_social">
+              <a href="https://www.behance.net/thomasvieillecourt" target="_blank"><img src="/styles/media/behance.png" alt="behance logo"
+                /></a>
+              <a href="https://www.linkedin.com/in/thomas-vieillecourt/" target="_blank"><img src="/styles/media/linkedin.png" alt="linkedIn logo"
+                  /></a>
+              <a href="https://github.com/ThomasVieillecourt" target="_blank"><img src="/styles/media/Vectorgithub.png" alt="github logo"/></a>
+            </div>
+        </div>
       </nav>
+      <a href="#" id="openBtn"><img src="/styles/media/burger.png" alt="burger icon"></a> 
     </header>
 
     <main>
@@ -42,27 +55,28 @@
               <p>Hello, I'm Thomas</p>
               <h1>Web Designer <span>&</span> Front-end Developer</h1>
             </div>
-            <button class="btn RadialGradient">Contact me 👋</button>
+            <button class="btn">Contact me <span>👋</span></button>
             <div class="banner__container--img">
               <img src="/styles/media/Saly-10.png" alt="character 3D" />
+              <a href="#graphic"><img src="/styles/media/scroll.png" alt="scroll icon" id="scroll"/></a>
             </div>
             <div class="banner--social-icons">
               <ul>
                 <li>
-                  <a
+                  <a href="https://www.behance.net/thomasvieillecourt" target="_blank"
                     ><img src="/styles/media/behance.png" alt="behance logo"
                   /></a>
                 </li>
                 <li>
-                  <a
-                    ><img src="/styles/media/linkedin.png" alt="behance logo"
+                  <a href="https://www.linkedin.com/in/thomas-vieillecourt/" target="_blank"
+                    ><img src="/styles/media/linkedin.png" alt="linkedIn logo"
                   /></a>
                 </li>
                 <li>
-                  <a
+                  <a href="https://github.com/ThomasVieillecourt" target="_blank"
                     ><img
                       src="/styles/media/Vectorgithub.png"
-                      alt="behance logo"
+                      alt="github logo"
                   /></a>
                 </li>
               </ul>
@@ -85,20 +99,37 @@
               </button>
             </div>
             <div class="content--designer-cards">
-              <div class="card"></div>
+              <div class="card" id="grid1">
+               
+              </div>
+              <div class="card" id="grid2">
+                <div>
+                  <h4>Branding</h4>
+                  <p>Creation of an identity for a new mocktail company. There is a complete design identity and website model for desktop and mobile.</p>
+                  <button>Discover project</button>
+                </div>
+              </div>
+              <div class="card" id="grid3"></div>
+              <div class="card" id="grid4"></div>
+              <div class="card" id="grid5"><div>
+                <h4>Visit cards</h4>
+                <p>Creation of a visit card for a professionnal worker. I made a complete redesign for the logo.</p>
+                <button>Discover project</button>
+              </div></div>
             </div>
             <img
               src="styles/media/figma.png"
               alt="logo figma"
               id="figma-logo"
+              class="anim-logo"
             />
-            <img
+            <!-- <img
               src="styles/media/switch.png"
               alt="logo switch"
               id="switch-logo"
-            />
+            /> -->
           </div>
-          <div class="content--developer">
+          <div class="content--developer" >
             <div class="content--developer-text">
                 <h2>front-end developer</h2>
                 <p>All my projects are available on my GitHub profile</p>
@@ -118,20 +149,22 @@
             </ul>
               </div>
               <div class="content--developer-cards">
-                <div class="dev--card"></div>
-                <div class="dev--card"></div>
-                <div class="dev--card"></div>
-                <div class="dev--card"></div>
+                <div class="dev--card">Content 1</div>
+                <div class="dev--card">Content 2</div>
+                <div class="dev--card">Content 3</div>
+                <div class="dev--card">Content 4</div>
+                
               </div>
               <img
               src="styles/media/phone.png"
               alt="logo switch"
               id="phone-logo"
+              class="anim-logo"
             />
               
             </div>
           </div>
-          <div class="content--experience">
+          <div class="content--experience" id="exp">
             <div class="flux">
               <div class="exp__content">
                 <h3>Traineeship as Graphic Designer at B'creativ</h3>
@@ -157,7 +190,9 @@
             </div>
             
           </div>
-          <div class="content--contact">
+
+
+          <div class="content--contact" id="contact">
             <div class="flux">
               <div class="form--container">
                 <h2>contact me</h2>
@@ -173,23 +208,38 @@
                 </form>
               </div>
               </div>
-            </div>
 
+              <img
+              src="styles/media/chatBubble.png"
+              alt="logo bubble chat"
+              id="bubbleChat-logo"
+              class="anim-logo"
+            />
+              <img
+                src="styles/media/at.png"
+                alt="logo at"
+                id="at-logo"
+                class="anim-logo"
+              />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="RadialGradient">
-      <p>Thomas Vieillecourt <br> Web Designer & Developer Front-end</p>
+    <footer class="secondGradient">
+      <div class="footer--container">
+        <p>Thomas Vieillecourt <br> Web Designer & Developer Front-end</p>
 
-      <ul>
-      <li>Portfolio</li>
-      <li>Experience</li>
-      <li>Contact</li>
-    </ul>
+        <ul>
+          <li><a href="#graphic">Portfolio</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-
+      </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

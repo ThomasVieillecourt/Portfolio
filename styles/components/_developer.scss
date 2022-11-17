@@ -10,6 +10,10 @@
   .content--developer-text {
     padding: 2rem 0 2rem 0;
 
+    @media screen and (max-width: 1000px) {
+      padding: 2rem;
+    }
+
     @media screen and (max-width: 400px) {
       padding: 1rem 0;
     }
@@ -144,7 +148,7 @@
     }
     @media screen and (max-width: 400px) {
       width: 120px;
-      top: 2%;
+      top: 16%;
       right: -6%;
     }
   }

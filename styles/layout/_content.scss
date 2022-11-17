@@ -15,4 +15,11 @@
     right: 0;
     top: 9%;
   }
+
+  .anim-logo {
+    animation-name: randomMoove;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
 }

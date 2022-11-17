@@ -74,6 +74,21 @@ h3 {
   }
 }
 
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: $Blanc;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.2rem;
+  }
+}
+
 a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -122,8 +137,23 @@ p {
   );
 }
 
+.secondGradient {
+  background: rgb(17, 22, 138);
+  background: linear-gradient(
+    320deg,
+    rgba(17, 22, 138, 1) 010%,
+    rgba(134, 17, 160, 1) 90%
+  );
+}
+
 .btn {
   border: none;
+  background: rgb(17, 22, 138);
+  background: linear-gradient(
+    320deg,
+    rgba(17, 22, 138, 0.8) 010%,
+    rgba(134, 17, 160, 0.8) 90%
+  );
   border-radius: 50px;
   color: $Blanc;
   font-family: "Raleway", sans-serif;
@@ -134,9 +164,82 @@ p {
   cursor: pointer;
   box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.4);
 
+  &:hover {
+    background: none;
+    color: $NoirNuit;
+    background-color: $Blanc;
+    transition: 0.5s;
+
+    span {
+      animation-name: handMoove;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     width: 184px;
     height: 50px;
     font-size: 1rem;
+  }
+}
+
+@keyframes handMoove {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes randomMoove {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+    transform: scale(1.1);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
   }
 }

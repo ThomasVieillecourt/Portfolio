@@ -78,6 +78,23 @@ h3 {
   }
 }
 
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #f3f3f3;
+}
+@media screen and (max-width: 800px) {
+  h4 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
 a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -126,8 +143,15 @@ p {
   background: linear-gradient(320deg, rgba(17, 22, 138, 0.8) 10%, rgba(134, 17, 160, 0.8) 90%);
 }
 
+.secondGradient {
+  background: rgb(17, 22, 138);
+  background: linear-gradient(320deg, rgb(17, 22, 138) 10%, rgb(134, 17, 160) 90%);
+}
+
 .btn {
   border: none;
+  background: rgb(17, 22, 138);
+  background: linear-gradient(320deg, rgba(17, 22, 138, 0.8) 10%, rgba(134, 17, 160, 0.8) 90%);
   border-radius: 50px;
   color: #f3f3f3;
   font-family: "Raleway", sans-serif;
@@ -138,6 +162,22 @@ p {
   cursor: pointer;
   box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.4);
 }
+.btn:hover {
+  background: none;
+  color: #04040f;
+  background-color: #f3f3f3;
+  transition: 0.5s;
+}
+.btn:hover span {
+  -webkit-animation-name: handMoove;
+          animation-name: handMoove;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
 @media screen and (max-width: 800px) {
   .btn {
     width: 184px;
@@ -146,6 +186,119 @@ p {
   }
 }
 
+@-webkit-keyframes handMoove {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes handMoove {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes randomMoove {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+    transform: scale(1.1);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+}
+@keyframes randomMoove {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+    transform: scale(1.1);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+}
 .sidenav {
   height: 100%;
   width: 100%;
@@ -223,6 +376,10 @@ p {
   border-bottom: none;
   color: #f3f3f3;
 }
+.sidenav .nav_content_container a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 @media screen and (min-width: 500px) {
   .sidenav .nav_content_container a i {
     display: none;
@@ -293,6 +450,9 @@ p {
   position: relative;
   z-index: 2;
 }
+.container .banner__container .btn:hover {
+  background-color: #f3f3f3;
+}
 .container .banner__container .banner__container--img {
   width: 100%;
   position: absolute;
@@ -345,6 +505,10 @@ p {
 .container .banner__container .banner--social-icons ul li a img {
   width: 2rem;
 }
+.container .banner__container .banner--social-icons ul li a img:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
+}
 @media screen and (max-width: 500px) {
   .container .banner__container .banner--social-icons {
     display: none;
@@ -366,6 +530,15 @@ p {
   z-index: 0;
   right: 0;
   top: 9%;
+}
+.content__container .anim-logo {
+  -webkit-animation-name: randomMoove;
+          animation-name: randomMoove;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  display: inline-block;
 }
 
 footer {
@@ -394,16 +567,19 @@ footer .footer--container ul li {
   font-size: 0.8rem;
   padding: 1rem;
 }
+footer .footer--container ul li:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .content--designer {
-  height: 90vh;
+  height: auto;
   padding: 4rem 0;
   position: relative;
 }
 @media screen and (max-width: 800px) {
   .content--designer {
     margin: 0 2rem;
-    height: auto;
   }
 }
 @media screen and (max-width: 400px) {
@@ -427,52 +603,153 @@ footer .footer--container ul li {
 .content--designer .content--designer-text button i {
   padding-left: 0.6rem;
 }
+@media screen and (max-width: 1000px) {
+  .content--designer .content--designer-text {
+    padding: 2rem;
+  }
+}
 @media screen and (max-width: 800px) {
   .content--designer .content--designer-text button {
     font-size: 1rem;
     margin: 0 0 3rem 0;
   }
 }
-.content--designer .content--designer-cards .card {
-  width: 586px;
-  height: 356px;
-  background: url("media/Mockup_desktop_V1.png") no-repeat center center;
-  background-size: cover;
-  border-radius: 38px;
+@media screen and (max-width: 400px) {
+  .content--designer .content--designer-text {
+    padding: 2rem 2rem 0 2rem;
+  }
 }
-@media screen and (max-width: 800px) {
+.content--designer .content--designer-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-areas: "grid1 grid1 grid1" "grid2 grid3 grid3" "grid4 grid4 grid5";
+}
+@media screen and (max-width: 1000px) {
+  .content--designer .content--designer-cards {
+    grid-template-columns: 100%;
+    padding: 0 2rem;
+    grid-template-areas: "grid1" "grid3" "grid4";
+  }
+}
+.content--designer .content--designer-cards .card {
+  height: 356px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 1000px) {
   .content--designer .content--designer-cards .card {
     width: 100%;
     height: 180px;
   }
 }
-.content--designer #figma-logo {
+.content--designer #grid1 {
+  grid-area: grid1;
+  background: url("media/mockup-mob-test.png") no-repeat left center;
+  background-size: cover;
+}
+.content--designer #grid2 {
+  grid-area: grid2;
+  background-color: #04040f;
+  border: 2px solid #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .content--designer #grid2 {
+    display: none;
+  }
+}
+.content--designer #grid2 p {
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+}
+.content--designer #grid2 button {
+  background-color: #f3f3f3;
+  height: 3rem;
+  width: 10rem;
+  margin: 2rem 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.content--designer #grid3 {
+  grid-area: grid3;
+  background: url("media/Mockup_desktop_V1.png") no-repeat left center;
+  background-size: cover;
+}
+.content--designer #grid4 {
+  grid-area: grid4;
+  background: url("media/Mockup_VisitCard_V1.png") no-repeat left center;
+  background-size: cover;
+}
+.content--designer #grid5 {
+  grid-area: grid5;
+  background-color: #04040f;
+  border: 2px solid #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .content--designer #grid5 {
+    display: none;
+  }
+}
+.content--designer #grid5 p {
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+}
+.content--designer #grid5 button {
+  background-color: #f3f3f3;
+  height: 3rem;
+  width: 10rem;
+  margin: 2rem 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#figma-logo {
   position: absolute;
   top: 6%;
   right: 4%;
   width: 240px;
   pointer-events: none;
 }
+@media screen and (max-width: 1000px) {
+  #figma-logo {
+    width: 200px;
+    top: 10%;
+  }
+}
 @media screen and (max-width: 800px) {
-  .content--designer #figma-logo {
+  #figma-logo {
     width: 140px;
     top: 18%;
   }
 }
 @media screen and (max-width: 600px) {
-  .content--designer #figma-logo {
+  #figma-logo {
     width: 120px;
-    top: 26%;
+    top: 20%;
   }
 }
 @media screen and (max-width: 400px) {
-  .content--designer #figma-logo {
+  #figma-logo {
     width: 80px;
-    top: 32%;
+    top: 18%;
     right: 0%;
   }
 }
-.content--designer #switch-logo {
+
+#switch-logo {
   position: absolute;
   bottom: -12%;
   left: -14%;
@@ -492,6 +769,11 @@ footer .footer--container ul li {
 }
 .content--developer .content--developer-text {
   padding: 2rem 0 2rem 0;
+}
+@media screen and (max-width: 1000px) {
+  .content--developer .content--developer-text {
+    padding: 2rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .content--developer .content--developer-text {
@@ -630,7 +912,7 @@ footer .footer--container ul li {
 @media screen and (max-width: 400px) {
   .content--developer #phone-logo {
     width: 120px;
-    top: 2%;
+    top: 16%;
     right: -6%;
   }
 }
