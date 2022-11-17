@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: auto;
   position: relative;
@@ -17,9 +21,26 @@ h1 {
   color: #f3f3f3;
   text-shadow: 4px 4px 4px rgba(17, 17, 17, 0.4);
   padding: 1.4rem 0 0 0;
+  text-align: center;
 }
 h1 span {
   font-weight: 600;
+}
+@media screen and (max-width: 1300px) {
+  h1 {
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.6rem;
+  }
 }
 
 h2 {
@@ -29,12 +50,32 @@ h2 {
   color: #f3f3f3;
   text-transform: uppercase;
 }
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
 
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 2rem;
   color: #f3f3f3;
+}
+@media screen and (max-width: 800px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 a {
@@ -52,12 +93,32 @@ p {
   font-size: 1.2rem;
   color: #f3f3f3;
 }
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
 
 .flux {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 1300px) {
+  .flux {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .flux {
+    max-width: 100%;
+  }
 }
 
 .RadialGradient {
@@ -77,23 +138,127 @@ p {
   cursor: pointer;
   box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.4);
 }
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 184px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
 
-header {
+.sidenav {
+  height: 100%;
   width: 100%;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: -100%;
+  background-color: #04040f;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+@media screen and (min-width: 500px) {
+  .sidenav {
+    left: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 5rem;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.sidenav a {
+  text-decoration: none;
+  border-bottom: none;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #111;
+}
+.sidenav .close {
   position: absolute;
   top: 0;
-  z-index: 2;
+  right: 25px;
+  font-size: 36px;
 }
-header nav {
-  height: 100%;
-  width: 80%;
+@media screen and (min-width: 500px) {
+  .sidenav .close {
+    display: none;
+  }
+}
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidenav #closeBtn {
+  position: absolute;
+  top: 4%;
+  left: 6%;
+}
+@media screen and (min-width: 500px) {
+  .sidenav #closeBtn {
+    display: none;
+  }
+}
+.sidenav .nav_content_container {
+  padding: 2rem 2rem;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+@media screen and (min-width: 500px) {
+  .sidenav .nav_content_container {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.sidenav .nav_content_container a {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+  border-bottom: none;
+  color: #f3f3f3;
+}
+@media screen and (min-width: 500px) {
+  .sidenav .nav_content_container a i {
+    display: none;
+  }
+}
+.sidenav .nav_content_container .line_social {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (min-width: 500px) {
+  .sidenav .nav_content_container .line_social {
+    display: none;
+  }
+}
+.sidenav .nav_content_container .line_social a {
+  border-bottom: none;
+}
+.sidenav .nav_content_container .line_social img {
+  width: 32px;
+}
+
+#openBtn {
+  position: absolute;
+  top: 1%;
+  left: 6%;
+  cursor: pointer;
+  z-index: 1;
+}
+@media screen and (min-width: 500px) {
+  #openBtn {
+    display: none;
+  }
+}
+
+.active {
+  left: 0;
 }
 
 .container {
@@ -105,6 +270,16 @@ header nav {
   height: 100vh;
   width: 100%;
   position: relative;
+}
+@media screen and (max-width: 600px) {
+  .container .banner__container {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container .banner__container {
+    padding: 10rem 0 0 0;
+  }
 }
 .container .banner__container .banner--text {
   display: flex;
@@ -129,8 +304,36 @@ header nav {
 .container .banner__container .banner__container--img img {
   width: 538px;
 }
+@media screen and (max-width: 800px) {
+  .container .banner__container .banner__container--img img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .banner__container .banner__container--img img {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container .banner__container .banner__container--img img {
+    display: none;
+  }
+}
+.container .banner__container .banner__container--img #scroll {
+  display: none;
+}
+@media screen and (max-width: 350px) {
+  .container .banner__container .banner__container--img #scroll {
+    cursor: pointer;
+    display: block;
+    width: 62px;
+    margin: 0 auto;
+    transform: translateY(-100%);
+  }
+}
 .container .banner__container .banner--social-icons {
   position: fixed;
+  z-index: 10;
   right: 6%;
   bottom: 0;
 }
@@ -142,48 +345,71 @@ header nav {
 .container .banner__container .banner--social-icons ul li a img {
   width: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .container .banner__container .banner--social-icons {
+    display: none;
+  }
+}
 
 .content__container {
   background-color: #04040f;
+  position: relative;
 }
 .content__container #circle-w-bg {
   position: absolute;
   z-index: 0;
   right: 0;
-  top: 40%;
+  top: 10%;
 }
 .content__container #circle-v-bg {
   position: absolute;
   z-index: 0;
   right: 0;
-  top: 39%;
+  top: 9%;
 }
 
 footer {
   height: 24vh;
+  display: flex;
+  align-items: center;
 }
-footer p {
+footer .footer--container {
+  width: 100%;
+}
+footer .footer--container p {
   text-align: center;
 }
-footer ul {
+footer .footer--container ul {
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 2rem auto;
 }
-footer ul li {
+footer .footer--container ul li {
   list-style: none;
   color: #f3f3f3;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 .content--designer {
   height: 90vh;
   padding: 4rem 0;
   position: relative;
+}
+@media screen and (max-width: 800px) {
+  .content--designer {
+    margin: 0 2rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content--designer {
+    padding: 1rem 0;
+  }
 }
 .content--designer .content--designer-text {
   padding: 2rem 0 2rem 0;
@@ -201,6 +427,12 @@ footer ul li {
 .content--designer .content--designer-text button i {
   padding-left: 0.6rem;
 }
+@media screen and (max-width: 800px) {
+  .content--designer .content--designer-text button {
+    font-size: 1rem;
+    margin: 0 0 3rem 0;
+  }
+}
 .content--designer .content--designer-cards .card {
   width: 586px;
   height: 356px;
@@ -208,12 +440,37 @@ footer ul li {
   background-size: cover;
   border-radius: 38px;
 }
+@media screen and (max-width: 800px) {
+  .content--designer .content--designer-cards .card {
+    width: 100%;
+    height: 180px;
+  }
+}
 .content--designer #figma-logo {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 6%;
+  right: 4%;
   width: 240px;
   pointer-events: none;
+}
+@media screen and (max-width: 800px) {
+  .content--designer #figma-logo {
+    width: 140px;
+    top: 18%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content--designer #figma-logo {
+    width: 120px;
+    top: 26%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content--designer #figma-logo {
+    width: 80px;
+    top: 32%;
+    right: 0%;
+  }
 }
 .content--designer #switch-logo {
   position: absolute;
@@ -228,8 +485,18 @@ footer ul li {
   padding: 4rem 0;
   position: relative;
 }
+@media screen and (max-width: 800px) {
+  .content--developer {
+    margin: 0 2rem;
+  }
+}
 .content--developer .content--developer-text {
   padding: 2rem 0 2rem 0;
+}
+@media screen and (max-width: 400px) {
+  .content--developer .content--developer-text {
+    padding: 1rem 0;
+  }
 }
 .content--developer .content--developer-text h2 {
   padding: 0 0 1rem 0;
@@ -241,12 +508,26 @@ footer ul li {
   font-size: 1.2rem;
   margin: 0 0 3rem 0;
 }
+@media screen and (max-width: 800px) {
+  .content--developer .content--developer-text button {
+    font-size: 1rem;
+  }
+}
 .content--developer .content--developer-text button i {
   padding-left: 0.6rem;
 }
 .content--developer .content--developer-lang ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  word-spacing: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .content--developer .content--developer-lang ul {
+    flex-wrap: wrap;
+    line-height: 2rem;
+    word-spacing: 2rem;
+  }
 }
 .content--developer .content--developer-lang ul li {
   list-style: none;
@@ -254,7 +535,7 @@ footer ul li {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem;
-  cursor: pointer;
+  cursor: default;
 }
 .content--developer .content--developer-lang ul li#html:hover {
   color: #e54c21;
@@ -271,6 +552,16 @@ footer ul li {
 .content--developer .content--developer-lang ul li#react:hover {
   color: #61dbfb;
 }
+@media screen and (max-width: 1300px) {
+  .content--developer .content--developer-lang ul li {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content--developer .content--developer-lang ul li {
+    font-size: 1.4rem;
+  }
+}
 .content--developer .content--developer-cards {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -283,10 +574,40 @@ footer ul li {
   background-color: #0c6fb2;
   width: 100%;
   height: 360px;
-  border-radius: 38px;
+  border-radius: 12px;
   display: block;
   margin: 0 auto;
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .content--developer .content--developer-cards .dev--card {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content--developer .content--developer-cards .dev--card {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .content--developer .content--developer-cards {
+    gap: 2rem;
+    margin: 4rem 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content--developer .content--developer-cards {
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 1rem;
+    margin: 2rem 4rem 4rem 4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content--developer .content--developer-cards {
+    margin: 2rem 0;
+  }
 }
 .content--developer #phone-logo {
   position: absolute;
@@ -295,12 +616,35 @@ footer ul li {
   width: 300px;
   pointer-events: none;
 }
+@media screen and (max-width: 800px) {
+  .content--developer #phone-logo {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content--developer #phone-logo {
+    width: 180px;
+    top: 12%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content--developer #phone-logo {
+    width: 120px;
+    top: 2%;
+    right: -6%;
+  }
+}
 
 .content--experience {
   width: 58vw;
   display: block;
   margin: 0 auto;
   position: relative;
+}
+@media screen and (max-width: 800px) {
+  .content--experience {
+    width: 80%;
+  }
 }
 .content--experience .exp__content {
   padding: 0 2rem 5rem 2rem;
@@ -318,12 +662,15 @@ footer ul li {
 .content--experience .exp__content span {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
   color: #747474;
 }
 .content--experience .exp__content p {
   margin: 1rem 0 0 0;
-  font-size: 1rem;
+}
+@media screen and (max-width: 400px) {
+  .content--experience .exp__content {
+    padding: 0 2rem 3rem 2rem;
+  }
 }
 .content--experience #white-line {
   height: 90%;
@@ -340,15 +687,40 @@ footer ul li {
   border-top: 2px solid #f3f3f3;
   border-right: 2px solid #f3f3f3;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -2%;
+  right: -2%;
   z-index: 4;
 }
+@media screen and (max-width: 1300px) {
+  .content--experience #white-square-banner {
+    height: 60px;
+    width: 60px;
+  }
+}
 
+.content--contact {
+  padding: 5rem 0;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .content--contact {
+    padding: 2rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content--contact {
+    padding: 4rem 2rem;
+  }
+}
 .content--contact .form--container {
   width: 60vw;
   display: block;
   margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+  .content--contact .form--container {
+    width: 100%;
+  }
 }
 .content--contact .form--container h2 {
   text-align: center;
@@ -358,6 +730,16 @@ footer ul li {
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1300px) {
+  .content--contact .form--container .box__form form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content--contact .form--container .box__form form {
+    width: 100%;
+  }
 }
 .content--contact .form--container .box__form form label {
   font-family: "Raleway", sans-serif;
@@ -373,6 +755,7 @@ footer ul li {
   border: none;
   outline: none;
   padding: 0 1rem;
+  font-family: "Raleway", sans-serif;
 }
 .content--contact .form--container .box__form form input::-moz-placeholder {
   font-family: "Raleway", sans-serif;
@@ -389,6 +772,7 @@ footer ul li {
   border: none;
   outline: none;
   padding: 1rem;
+  font-family: "Raleway", sans-serif;
 }
 .content--contact .form--container .box__form form #message::-moz-placeholder {
   font-family: "Raleway", sans-serif;
@@ -407,4 +791,61 @@ footer ul li {
 }
 .content--contact .form--container .box__form form #btn--form i {
   padding-left: 1rem;
+}
+.content--contact #bubbleChat-logo {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+@media screen and (max-width: 1300px) {
+  .content--contact #bubbleChat-logo {
+    width: 200px;
+    left: 6%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content--contact #bubbleChat-logo {
+    width: 200px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content--contact #bubbleChat-logo {
+    width: 120px;
+    top: -4%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content--contact #bubbleChat-logo {
+    width: 100px;
+    top: -8%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content--contact #bubbleChat-logo {
+    width: 100px;
+    top: -2%;
+  }
+}
+.content--contact #at-logo {
+  position: absolute;
+  bottom: -14%;
+  right: 10%;
+}
+@media screen and (max-width: 1300px) {
+  .content--contact #at-logo {
+    width: 200px;
+    bottom: -8%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content--contact #at-logo {
+    width: 200px;
+    bottom: -8%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content--contact #at-logo {
+    width: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */

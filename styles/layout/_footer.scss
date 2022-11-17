@@ -1,23 +1,30 @@
 footer {
   height: 24vh;
+  display: flex;
+  align-items: center;
 
-  p {
-    text-align: center;
-  }
+  .footer--container {
+    width: 100%;
 
-  ul {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 2rem auto;
+    p {
+      text-align: center;
+    }
 
-    li {
-      list-style: none;
-      color: $Blanc;
-      font-family: "Raleway", sans-serif;
-      font-weight: 500;
-      font-size: 1rem;
+    ul {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 2rem auto;
+
+      li {
+        list-style: none;
+        color: $Blanc;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        padding: 1rem;
+      }
     }
   }
 }

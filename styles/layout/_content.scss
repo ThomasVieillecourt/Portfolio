@@ -1,17 +1,18 @@
 .content__container {
   background-color: $NoirNuit;
+  position: relative;
 
   #circle-w-bg {
     position: absolute;
     z-index: 0;
     right: 0;
-    top: 40%;
+    top: 10%;
   }
 
   #circle-v-bg {
     position: absolute;
     z-index: 0;
     right: 0;
-    top: 39%;
+    top: 9%;
   }
 }

@@ -1,8 +1,23 @@
 .content--contact {
+  padding: 5rem 0;
+  position: relative;
+
+  @media screen and (max-width: 600px) {
+    padding: 2rem 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 4rem 2rem;
+  }
+
   .form--container {
     width: 60vw;
     display: block;
     margin: 0 auto;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
 
     h2 {
       text-align: center;
@@ -14,6 +29,14 @@
         flex-direction: column;
         width: 50%;
         margin: 0 auto;
+
+        @media screen and (max-width: 1300px) {
+          width: 80%;
+        }
+
+        @media screen and (max-width: 800px) {
+          width: 100%;
+        }
 
         label {
           font-family: "Raleway", sans-serif;
@@ -30,6 +53,7 @@
           border: none;
           outline: none;
           padding: 0 1rem;
+          font-family: "Raleway", sans-serif;
 
           &::placeholder {
             font-family: "Raleway", sans-serif;
@@ -41,6 +65,7 @@
           border: none;
           outline: none;
           padding: 1rem;
+          font-family: "Raleway", sans-serif;
 
           &::placeholder {
             font-family: "Raleway", sans-serif;
@@ -58,6 +83,57 @@
           }
         }
       }
+    }
+  }
+
+  #bubbleChat-logo {
+    position: absolute;
+    top: 0;
+    left: 10%;
+
+    @media screen and (max-width: 1300px) {
+      width: 200px;
+      left: 6%;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 200px;
+      left: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 120px;
+      top: -4%;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 100px;
+      top: -8%;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 100px;
+      top: -2%;
+    }
+  }
+
+  #at-logo {
+    position: absolute;
+    bottom: -14%;
+    right: 10%;
+
+    @media screen and (max-width: 1300px) {
+      width: 200px;
+      bottom: -8%;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 200px;
+      bottom: -8%;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 120px;
     }
   }
 }

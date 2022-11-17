@@ -4,6 +4,10 @@
   margin: 0 auto;
   position: relative;
 
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
+
   .exp__content {
     padding: 0 2rem 5rem 2rem;
 
@@ -21,13 +25,16 @@
     span {
       font-family: "Raleway", sans-serif;
       font-weight: 600;
-      font-size: 1rem;
+
       color: #747474;
     }
 
     p {
       margin: 1rem 0 0 0;
-      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding: 0 2rem 3rem 2rem;
     }
   }
   #white-line {
@@ -46,8 +53,13 @@
     border-top: 2px solid $Blanc;
     border-right: 2px solid $Blanc;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -2%;
+    right: -2%;
     z-index: 4;
+
+    @media screen and (max-width: 1300px) {
+      height: 60px;
+      width: 60px;
+    }
   }
 }
