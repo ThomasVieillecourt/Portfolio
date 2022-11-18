@@ -9,6 +9,8 @@
       designer
     </title>
 
+    <!-- Feuille de style et import font-awesome -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,21 +28,30 @@
   </head>
 
   <body>
-    <header>
 
+<!-- Header et navigation -->
+
+    <header>
       <nav class="sidenav" id="Sidenav">
         <a href="#" id="closeBtn"><img src="/styles/media/cross.png" alt="cross icon" ></a> 
 
-        <div class="nav_content_container">
+        <div class="sidenav--content__container">
           <a href="#graphic" onclick=closeNav()>Portfolio <i class="fa-solid fa-arrow-right"></i></a>
           <a href="#exp" onclick=closeNav()>Experience <i class="fa-solid fa-arrow-right"></i></a>
           <a href="#contact" onclick=closeNav()>Contact <i class="fa-solid fa-arrow-right"></i></a>
+
+          <!-- Social nav -->
+
             <div class="line_social">
-              <a href="https://www.behance.net/thomasvieillecourt" target="_blank"><img src="/styles/media/behance.png" alt="behance logo"
-                /></a>
-              <a href="https://www.linkedin.com/in/thomas-vieillecourt/" target="_blank"><img src="/styles/media/linkedin.png" alt="linkedIn logo"
-                  /></a>
-              <a href="https://github.com/ThomasVieillecourt" target="_blank"><img src="/styles/media/Vectorgithub.png" alt="github logo"/></a>
+              <a href="https://www.behance.net/thomasvieillecourt" target="_blank">
+                <img src="/styles/media/behance.png" alt="behance logo"/>
+              </a>
+              <a href="https://www.linkedin.com/in/thomas-vieillecourt/" target="_blank">
+                <img src="/styles/media/linkedin.png" alt="linkedIn logo"/>
+              </a>
+              <a href="https://github.com/ThomasVieillecourt" target="_blank">
+                <img src="/styles/media/Vectorgithub.png" alt="github logo"/>
+              </a>
             </div>
         </div>
       </nav>
@@ -50,34 +61,44 @@
     <main>
       <section class="container">
         <div class="flux">
+
+          <!-- Bannière website  -->
+
           <div class="banner__container">
-            <div class="banner--text">
+            <div class="banner__container--text">
               <p>Hello, I'm Thomas</p>
               <h1>Web Designer <span>&</span> Front-end Developer</h1>
             </div>
+
             <button class="btn">Contact me <span>👋</span></button>
+
             <div class="banner__container--img">
               <img src="/styles/media/Saly-10.png" alt="character 3D" />
-              <a href="#graphic"><img src="/styles/media/scroll.png" alt="scroll icon" id="scroll"/></a>
+              <a href="#graphic">
+                <img src="/styles/media/scroll.png" alt="scroll icon" id="scroll"/>
+              </a>
             </div>
+
+            <!-- Social nav fixed bottom -->
+
             <div class="banner--social-icons">
               <ul>
                 <li>
-                  <a href="https://www.behance.net/thomasvieillecourt" target="_blank"
-                    ><img src="/styles/media/behance.png" alt="behance logo"
-                  /></a>
+                  <a href="https://www.behance.net/thomasvieillecourt" target="_blank">
+                    <img src="/styles/media/behance.png" alt="behance logo"/>
+                  </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/thomas-vieillecourt/" target="_blank"
-                    ><img src="/styles/media/linkedin.png" alt="linkedIn logo"
-                  /></a>
+                  <a href="https://www.linkedin.com/in/thomas-vieillecourt/" target="_blank">
+                    <img src="/styles/media/linkedin.png" alt="linkedIn logo"/>
+                  </a>
                 </li>
                 <li>
-                  <a href="https://github.com/ThomasVieillecourt" target="_blank"
-                    ><img
+                  <a href="https://github.com/ThomasVieillecourt" target="_blank">
+                    <img
                       src="/styles/media/Vectorgithub.png"
-                      alt="github logo"
-                  /></a>
+                      alt="github logo"/>
+                    </a>
                 </li>
               </ul>
             </div>
@@ -85,20 +106,25 @@
         </div>
       </section>
 
+      <!-- Contenu global de la page -->
+
       <section class="content__container">
 
         <img src="styles/media/Component4.png" alt="circle-white-bg" id="circle-w-bg">
         <img src="styles/media/Component5.png" alt="circle-grad-bg" id="circle-v-bg">
         <div class="flux">
           <div class="content--designer" id="graphic">
-            <div class="content--designer-text">
+            <div class="content--designer--text">
               <h2>Graphic designer</h2>
               <p>Few case study available on my Behance profile.</p>
               <button class="btn RadialGradient">
                 Behance profile <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
-            <div class="content--designer-cards">
+
+            <!-- Contenu section graphisme -->
+
+            <div class="content--designer--cards">
               <a href="https://www.behance.net/gallery/156262971/Fruits-mocktail-lovers" target="_blank" id="grid1">
                 <div class="card">
               </div></a>
@@ -121,7 +147,7 @@
               src="styles/media/figma.png"
               alt="logo figma"
               id="figma-logo"
-              class="anim-logo"
+            
             />
             <!-- <img
               src="styles/media/switch.png"
@@ -129,58 +155,66 @@
               id="switch-logo"
             /> -->
           </div>
+
+          <!-- Contenu section developpement -->
+
           <div class="content--developer" >
-            <div class="content--developer-text">
+            <div class="content--developer--text">
                 <h2>front-end developer</h2>
                 <p>All my projects are available on my GitHub profile</p>
                 <button class="btn RadialGradient">
                   GitHub profile <i class="fa-solid fa-arrow-right"></i>
                 </button>
-              </div>
+            </div>
 
-
-              <div class="content--developer-lang">
+              <div class="content--developer--lang">
                 <ul>
-                <li id="html">HTML</li>
-                <li id="css">CSS</li>
-                <li id="sass">SASS</li>
-                <li id="js">JAVASCRIPT</li>
-                <li id="react">REACT</li>
-            </ul>
+                  <li id="html">HTML</li>
+                  <li id="css">CSS</li>
+                  <li id="sass">SASS</li>
+                  <li id="js">JAVASCRIPT</li>
+                  <li id="react">REACT</li>
+                </ul>
               </div>
-              <div class="content--developer-cards">
-                <div class="dev--card">Content 1</div>
-                <div class="dev--card">Content 2</div>
-                <div class="dev--card">Content 3</div>
-                <div class="dev--card">Content 4</div>
-                
+              <div class="content--developer--cards">
+                <div class="dev--card" id="dev-card-1">
+                  <span class="hover--span">Valorant agent selection website</span></div>
+                <div class="dev--card" id="dev-card-2"><span class="hover--span">Landing page for NFT collection</span></div>
+                <div class="dev--card" id="dev-card-3"><span class="hover--span">Music player interface (Spotify like)</span></div>
+                <div class="dev--card" id="dev-card-4"><span class="hover--span">Meteo application with API</span></div>
+                <div class="dev--card" id="dev-card-5"><span class="hover--span">Flappy Bird game like</span></div>
+                <div class="dev--card" id="dev-card-6"><span class="hover--span">Marvel Quiz</span></div> 
               </div>
               <img
               src="styles/media/phone.png"
               alt="logo switch"
               id="phone-logo"
-              class="anim-logo"
+              
             />
               
             </div>
           </div>
+
+
+        <!-- Contenu section expérience -->
+
           <div class="content--experience" id="exp">
             <div class="flux">
-              <div class="exp__content">
+              <div class="content--experience--date">
                 <h3>Traineeship as Graphic Designer at B'creativ</h3>
                 <span class="exp__date">2017</span>
                 <p>Traineeship in an event agency, I was working on digital assets for professionnal website and also print poster and visit cards.</p>
               </div>
-              <div class="exp__content">
+              <div class="content--experience--date">
                 <h3>Assistant Digital Project Manager at Solocal Group</h3>
                 <span class="exp__date">2018</span>
                 <p>I was in charge of events organization inside the group. It could be training workflow organization, or newsletter setup and graphic design coherence.</p>
               </div>
-              <div class="exp__content">
+              <div class="content--experience--date">
                 <h3>Digital Project Manager at Big Youth agency
                 </h3>
                 <span class="exp__date">2019-2022</span>
-                <p>Working with dev and UI/UX teams allow me to create many websites such as the national printing house "IN Groupe", the Superway marketplace but also a content site for Danone.
+                  <p>Working with dev and UI/UX teams allow me to create many websites such   as the national printing house "IN Groupe", the Superway marketplace but  also a content site for Danone.
                   I was also responsible of the graphic design and monthly publication of the internal newsletter of Veolia.
                   </p>
               </div>
@@ -191,41 +225,42 @@
             
           </div>
 
+          <!--Formulaire de contact -->
 
           <div class="content--contact" id="contact">
             <div class="flux">
               <div class="form--container">
                 <h2>contact me</h2>
-                <div class="box__form">
-                <form action="">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Your name">
-                  <label for="message">Message</label>
-                  <textarea type="text" id="message" placeholder="Your message"></textarea>
-                  <button class="btn RadialGradient" id="btn--form">
-                    Send <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </form>
-              </div>
+                  <div class="box__form">
+                    <form action="">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" placeholder="Your name">
+                      <label for="message">Message</label>
+                      <textarea type="text" id="message" placeholder="Your message"></textarea>
+                      <button class="btn RadialGradient" id="btn--form">
+                        Send <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </form>
+                  </div>
               </div>
 
               <img
               src="styles/media/chatBubble.png"
               alt="logo bubble chat"
               id="bubbleChat-logo"
-              class="anim-logo"
-            />
+              />
               <img
                 src="styles/media/at.png"
                 alt="logo at"
-                id="at-logo"
-                class="anim-logo"
+                id="at-logo" 
               />
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
 
     <footer class="secondGradient">
       <div class="footer--container">

@@ -64,7 +64,7 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #f3f3f3;
 }
 @media screen and (max-width: 800px) {
@@ -107,7 +107,7 @@ a {
 p {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #f3f3f3;
 }
 @media screen and (max-width: 800px) {
@@ -239,66 +239,6 @@ p {
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes randomMoove {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-    transform: scale(1.1);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-    transform: scale(1);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-    transform: scale(1.1);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-    transform: scale(1);
-  }
-}
-@keyframes randomMoove {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-    transform: scale(1.1);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-    transform: scale(1);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-    transform: scale(1.1);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-    transform: scale(1);
-  }
-}
 .sidenav {
   height: 100%;
   width: 100%;
@@ -327,9 +267,6 @@ p {
   display: block;
   transition: 0.3s;
 }
-.sidenav a:hover {
-  color: #111;
-}
 .sidenav .close {
   position: absolute;
   top: 0;
@@ -356,48 +293,48 @@ p {
     display: none;
   }
 }
-.sidenav .nav_content_container {
+.sidenav--content__container {
   padding: 2rem 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 500px) {
-  .sidenav .nav_content_container {
+  .sidenav--content__container {
     padding: 0;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-.sidenav .nav_content_container a {
+.sidenav--content__container a {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem 0;
   border-bottom: none;
   color: #f3f3f3;
 }
-.sidenav .nav_content_container a:hover {
+.sidenav--content__container a:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
 @media screen and (min-width: 500px) {
-  .sidenav .nav_content_container a i {
+  .sidenav--content__container a i {
     display: none;
   }
 }
-.sidenav .nav_content_container .line_social {
+.sidenav--content__container .line_social {
   display: flex;
   justify-content: space-around;
 }
 @media screen and (min-width: 500px) {
-  .sidenav .nav_content_container .line_social {
+  .sidenav--content__container .line_social {
     display: none;
   }
 }
-.sidenav .nav_content_container .line_social a {
+.sidenav--content__container .line_social a {
   border-bottom: none;
 }
-.sidenav .nav_content_container .line_social img {
+.sidenav--content__container .line_social img {
   width: 32px;
 }
 
@@ -438,7 +375,7 @@ p {
     padding: 10rem 0 0 0;
   }
 }
-.container .banner__container .banner--text {
+.container .banner__container--text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -453,7 +390,7 @@ p {
 .container .banner__container .btn:hover {
   background-color: #f3f3f3;
 }
-.container .banner__container .banner__container--img {
+.container .banner__container--img {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -461,29 +398,29 @@ p {
   margin: 0 auto;
   text-align: center;
 }
-.container .banner__container .banner__container--img img {
+.container .banner__container--img img {
   width: 538px;
 }
 @media screen and (max-width: 800px) {
-  .container .banner__container .banner__container--img img {
+  .container .banner__container--img img {
     width: 400px;
   }
 }
 @media screen and (max-width: 500px) {
-  .container .banner__container .banner__container--img img {
+  .container .banner__container--img img {
     width: 340px;
   }
 }
 @media screen and (max-width: 350px) {
-  .container .banner__container .banner__container--img img {
+  .container .banner__container--img img {
     display: none;
   }
 }
-.container .banner__container .banner__container--img #scroll {
+.container .banner__container--img #scroll {
   display: none;
 }
 @media screen and (max-width: 350px) {
-  .container .banner__container .banner__container--img #scroll {
+  .container .banner__container--img #scroll {
     cursor: pointer;
     display: block;
     width: 62px;
@@ -530,15 +467,6 @@ p {
   z-index: 0;
   right: 0;
   top: 9%;
-}
-.content__container .anim-logo {
-  -webkit-animation-name: randomMoove;
-          animation-name: randomMoove;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  display: inline-block;
 }
 
 footer {
@@ -587,57 +515,57 @@ footer .footer--container ul li:hover {
     padding: 1rem 0;
   }
 }
-.content--designer .content--designer-text {
+.content--designer--text {
   padding: 2rem 0 2rem 0;
 }
-.content--designer .content--designer-text h2 {
+.content--designer--text h2 {
   padding: 0 0 1rem 0;
 }
-.content--designer .content--designer-text p {
+.content--designer--text p {
   padding: 0 0 3rem 0;
 }
-.content--designer .content--designer-text button {
+.content--designer--text button {
   font-size: 1.2rem;
   margin: 0 0 3rem 0;
 }
-.content--designer .content--designer-text button i {
+.content--designer--text button i {
   padding-left: 0.6rem;
 }
 @media screen and (max-width: 1000px) {
-  .content--designer .content--designer-text {
+  .content--designer--text {
     padding: 2rem;
   }
 }
 @media screen and (max-width: 800px) {
-  .content--designer .content--designer-text button {
+  .content--designer--text button {
     font-size: 1rem;
     margin: 0 0 3rem 0;
   }
 }
 @media screen and (max-width: 400px) {
-  .content--designer .content--designer-text {
+  .content--designer--text {
     padding: 2rem 2rem 0 2rem;
   }
 }
-.content--designer .content--designer-cards {
+.content--designer--cards {
   display: grid;
   gap: 1rem;
   grid-template-columns: 30% 40% 30%;
   grid-template-areas: "grid1 grid1 grid1" "grid2 grid3 grid3" "grid4 grid4 grid5";
 }
 @media screen and (max-width: 1000px) {
-  .content--designer .content--designer-cards {
+  .content--designer--cards {
     grid-template-columns: 100%;
     padding: 0 2rem;
     grid-template-areas: "grid1" "grid3" "grid4";
   }
 }
-.content--designer .content--designer-cards .card {
+.content--designer--cards .card {
   height: 356px;
   border-radius: 12px;
 }
 @media screen and (max-width: 1000px) {
-  .content--designer .content--designer-cards .card {
+  .content--designer--cards .card {
     width: 100%;
     height: 180px;
   }
@@ -792,51 +720,51 @@ footer .footer--container ul li:hover {
     margin: 0 2rem;
   }
 }
-.content--developer .content--developer-text {
+.content--developer--text {
   padding: 2rem 0 2rem 0;
 }
 @media screen and (max-width: 1000px) {
-  .content--developer .content--developer-text {
+  .content--developer--text {
     padding: 2rem;
   }
 }
 @media screen and (max-width: 400px) {
-  .content--developer .content--developer-text {
+  .content--developer--text {
     padding: 1rem 0;
   }
 }
-.content--developer .content--developer-text h2 {
+.content--developer--text h2 {
   padding: 0 0 1rem 0;
 }
-.content--developer .content--developer-text p {
+.content--developer--text p {
   padding: 0 0 3rem 0;
 }
-.content--developer .content--developer-text button {
+.content--developer--text button {
   font-size: 1.2rem;
   margin: 0 0 3rem 0;
 }
 @media screen and (max-width: 800px) {
-  .content--developer .content--developer-text button {
+  .content--developer--text button {
     font-size: 1rem;
   }
 }
-.content--developer .content--developer-text button i {
+.content--developer--text button i {
   padding-left: 0.6rem;
 }
-.content--developer .content--developer-lang ul {
+.content--developer--lang ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   word-spacing: 2rem;
 }
 @media screen and (max-width: 400px) {
-  .content--developer .content--developer-lang ul {
+  .content--developer--lang ul {
     flex-wrap: wrap;
     line-height: 2rem;
     word-spacing: 2rem;
   }
 }
-.content--developer .content--developer-lang ul li {
+.content--developer--lang ul li {
   list-style: none;
   color: #f3f3f3;
   font-family: "Raleway", sans-serif;
@@ -844,75 +772,156 @@ footer .footer--container ul li:hover {
   font-size: 3rem;
   cursor: default;
 }
-.content--developer .content--developer-lang ul li#html:hover {
+.content--developer--lang ul li#html:hover {
   color: #e54c21;
 }
-.content--developer .content--developer-lang ul li#css:hover {
+.content--developer--lang ul li#css:hover {
   color: #0c6fb2;
 }
-.content--developer .content--developer-lang ul li#sass:hover {
+.content--developer--lang ul li#sass:hover {
   color: #ce679a;
 }
-.content--developer .content--developer-lang ul li#js:hover {
+.content--developer--lang ul li#js:hover {
   color: #f7e018;
 }
-.content--developer .content--developer-lang ul li#react:hover {
+.content--developer--lang ul li#react:hover {
   color: #61dbfb;
 }
 @media screen and (max-width: 1300px) {
-  .content--developer .content--developer-lang ul li {
+  .content--developer--lang ul li {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 800px) {
-  .content--developer .content--developer-lang ul li {
+  .content--developer--lang ul li {
     font-size: 1.4rem;
   }
 }
-.content--developer .content--developer-cards {
+.content--developer--cards {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   margin: 4rem 10rem;
 }
-.content--developer .content--developer-cards .dev--card {
-  background-color: #0c6fb2;
+.content--developer--cards .dev--card {
   width: 100%;
-  height: 360px;
+  height: 240px;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.content--developer--cards .dev--card::after {
+  content: "";
+  background-color: black;
+  opacity: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  transition: opacity 0.8s ease;
+}
+.content--developer--cards .dev--card .hover--span {
+  display: none;
+}
+.content--developer--cards .dev--card:hover::after {
+  opacity: 0.6;
+  z-index: 1;
 }
 @media screen and (max-width: 800px) {
-  .content--developer .content--developer-cards .dev--card {
+  .content--developer--cards .dev--card {
     width: 100%;
     height: 200px;
   }
 }
 @media screen and (max-width: 500px) {
-  .content--developer .content--developer-cards .dev--card {
+  .content--developer--cards .dev--card {
     height: 120px;
   }
 }
+.content--developer--cards .dev--card:hover .hover--span {
+  position: absolute;
+  display: block;
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  opacity: 1;
+  padding: 1rem 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 10;
+  transition: 1s;
+}
+.content--developer--cards #dev-card-1 {
+  background: url("media/valorant.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.content--developer--cards #dev-card-2 {
+  background: url("media/astro.PNG") no-repeat left center;
+  background-size: cover;
+  cursor: pointer;
+}
+.content--developer--cards #dev-card-3 {
+  background: url("media/music.PNG") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+.content--developer--cards #dev-card-4 {
+  background: url("media/visu1.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  text-align: center;
+}
+.content--developer--cards #dev-card-5 {
+  background: url("media/visu3.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  text-align: center;
+}
+.content--developer--cards #dev-card-6 {
+  background: url("media/visu5.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  text-align: center;
+}
 @media screen and (max-width: 1300px) {
-  .content--developer .content--developer-cards {
+  .content--developer--cards {
     gap: 2rem;
     margin: 4rem 4rem;
   }
 }
+@media screen and (max-width: 900px) {
+  .content--developer--cards {
+    grid-template-columns: 40% 40%;
+  }
+}
 @media screen and (max-width: 800px) {
-  .content--developer .content--developer-cards {
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
+  .content--developer--cards {
     gap: 1rem;
-    margin: 2rem 4rem 4rem 4rem;
+    margin: 2rem 2rem 4rem 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content--developer--cards {
+    grid-template-columns: 80%;
   }
 }
 @media screen and (max-width: 400px) {
-  .content--developer .content--developer-cards {
+  .content--developer--cards {
     margin: 2rem 0;
   }
 }
@@ -943,7 +952,7 @@ footer .footer--container ul li:hover {
 }
 
 .content--experience {
-  width: 58vw;
+  width: 70vw;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -953,10 +962,15 @@ footer .footer--container ul li:hover {
     width: 80%;
   }
 }
-.content--experience .exp__content {
+@media screen and (min-width: 1600px) {
+  .content--experience {
+    width: 58vw;
+  }
+}
+.content--experience--date {
   padding: 0 2rem 5rem 2rem;
 }
-.content--experience .exp__content h3::before {
+.content--experience--date h3::before {
   content: "";
   display: inline-block;
   background-color: #f3f3f3;
@@ -966,16 +980,16 @@ footer .footer--container ul li:hover {
   position: absolute;
   transform: translateX(-200%) translateY(50%);
 }
-.content--experience .exp__content span {
+.content--experience--date span {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #747474;
 }
-.content--experience .exp__content p {
+.content--experience--date p {
   margin: 1rem 0 0 0;
 }
 @media screen and (max-width: 400px) {
-  .content--experience .exp__content {
+  .content--experience--date {
     padding: 0 2rem 3rem 2rem;
   }
 }

@@ -1,5 +1,5 @@
 .content--experience {
-  width: 58vw;
+  width: 70vw;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -8,7 +8,11 @@
     width: 80%;
   }
 
-  .exp__content {
+  @media screen and (min-width: 1600px) {
+    width: 58vw;
+  }
+
+  &--date {
     padding: 0 2rem 5rem 2rem;
 
     h3::before {

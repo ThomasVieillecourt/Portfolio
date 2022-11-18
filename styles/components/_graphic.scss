@@ -11,7 +11,7 @@
     padding: 1rem 0;
   }
 
-  .content--designer-text {
+  &--text {
     padding: 2rem 0 2rem 0;
 
     h2 {
@@ -47,7 +47,7 @@
     }
   }
 
-  .content--designer-cards {
+  &--cards {
     display: grid;
     gap: 1rem;
     grid-template-columns: 30% 40% 30%;

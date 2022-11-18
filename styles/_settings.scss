@@ -62,7 +62,7 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $Blanc;
 
   @media screen and (max-width: 800px) {
@@ -101,7 +101,7 @@ a {
 p {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: $Blanc;
 
   @media screen and (max-width: 800px) {
@@ -210,36 +210,5 @@ p {
   } /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
-  }
-}
-
-@keyframes randomMoove {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-    transform: scale(1.1);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-    transform: scale(1);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-    transform: scale(1.1);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-    transform: scale(1);
   }
 }

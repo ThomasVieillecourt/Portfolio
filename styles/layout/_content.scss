@@ -2,6 +2,8 @@
   background-color: $NoirNuit;
   position: relative;
 
+  // Cercle en background //
+
   #circle-w-bg {
     position: absolute;
     z-index: 0;
@@ -9,17 +11,12 @@
     top: 10%;
   }
 
+  // Cercle shadow en background //
+
   #circle-v-bg {
     position: absolute;
     z-index: 0;
     right: 0;
     top: 9%;
-  }
-
-  .anim-logo {
-    animation-name: randomMoove;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    display: inline-block;
   }
 }

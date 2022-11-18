@@ -24,10 +24,6 @@
     border-bottom: none;
     display: block;
     transition: 0.3s;
-
-    &:hover {
-      color: #111;
-    }
   }
 
   .close {
@@ -47,6 +43,8 @@
     margin: 0;
   }
 
+  // Btn cross menu mobile //
+
   #closeBtn {
     position: absolute;
     top: 4%;
@@ -57,7 +55,7 @@
     }
   }
 
-  .nav_content_container {
+  &--content__container {
     padding: 2rem 2rem;
     width: 100%;
     display: flex;
@@ -105,6 +103,8 @@
     }
   }
 }
+
+// Btn burger menu mobile//
 
 #openBtn {
   position: absolute;

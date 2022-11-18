@@ -10,12 +10,12 @@ closeBtn.addEventListener("click", () => {
   closeNav();
 });
 
-/* Set the width of the side navigation to 250px */
+/* Ajout de la class active pour ouvrir le menu */
 function openNav() {
   sidenav.classList.add("active");
 }
 
-/* Set the width of the side navigation to 0 */
+/* Retrait de la class active pour fermer le menu */
 function closeNav() {
   sidenav.classList.remove("active");
 }

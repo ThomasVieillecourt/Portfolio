@@ -7,7 +7,7 @@
     margin: 0 2rem;
   }
 
-  .content--developer-text {
+  &--text {
     padding: 2rem 0 2rem 0;
 
     @media screen and (max-width: 1000px) {
@@ -40,7 +40,7 @@
     }
   }
 
-  .content--developer-lang {
+  &--lang {
     ul {
       display: flex;
       justify-content: space-evenly;
@@ -88,22 +88,52 @@
     }
   }
 
-  .content--developer-cards {
+  &--cards {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     margin: 4rem 10rem;
 
     .dev--card {
-      background-color: #0c6fb2;
       width: 100%;
-      height: 360px;
+      height: 240px;
       border-radius: 12px;
       display: block;
       margin: 0 auto;
       cursor: pointer;
+      transition: 0.4s;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        background-color: rgba($color: #000, $alpha: 1);
+        opacity: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        transition: opacity 0.8s ease;
+      }
+
+      .hover--span {
+        display: none;
+      }
+
+      &:hover::after {
+        opacity: 0.6;
+        z-index: 1;
+      }
 
       @media screen and (max-width: 800px) {
         width: 100%;
@@ -113,6 +143,79 @@
       @media screen and (max-width: 500px) {
         height: 120px;
       }
+
+      &:hover {
+        .hover--span {
+          position: absolute;
+          display: block;
+          color: $Blanc;
+          font-size: 1.2rem;
+          opacity: 1;
+          padding: 1rem 1rem;
+          font-family: "Raleway", sans-serif;
+          font-weight: 700;
+          position: relative;
+          z-index: 10;
+          transition: 1s;
+        }
+      }
+    }
+
+    #dev-card-1 {
+      background: url("media/valorant.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    #dev-card-2 {
+      background: url("media/astro.PNG") no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    #dev-card-3 {
+      background: url("media/music.PNG") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    #dev-card-4 {
+      background: url("media/visu1.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    #dev-card-5 {
+      background: url("media/visu3.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    #dev-card-6 {
+      background: url("media/visu5.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      cursor: pointer;
+      text-align: center;
     }
 
     @media screen and (max-width: 1300px) {
@@ -120,11 +223,17 @@
       margin: 4rem 4rem;
     }
 
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 40% 40%;
+    }
+
     @media screen and (max-width: 800px) {
-      grid-template-columns: 100%;
-      grid-template-rows: 25% 25% 25% 25%;
       gap: 1rem;
-      margin: 2rem 4rem 4rem 4rem;
+      margin: 2rem 2rem 4rem 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 80%;
     }
 
     @media screen and (max-width: 400px) {
