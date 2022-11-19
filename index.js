@@ -19,3 +19,36 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+const validRegex =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+function SendMail() {
+  const params = {
+    from_name: document.getElementById("from_name").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+  };
+
+  if (params.email_id.match(validRegex)) {
+    emailjs
+      .send("service_4r6hzh5", "template_azodpme", params)
+      .then(function () {
+        alertify.set("notifier", "position", "bottom-center");
+        alertify.success("Your message was send Successfully.");
+      });
+  } else {
+    alertify.set("notifier", "position", "bottom-center");
+    alertify.error(
+      "Your message could not be sent, please verify the fields above."
+    );
+  }
+}
+
+const Parallax = document.getElementById("figma-logo");
+const Parallax2 = document.getElementById("phone-logo");
+
+window.addEventListener("scroll", () => {
+  Parallax.style.top = window.scrollY / 14 + "px";
+  Parallax2.style.top = window.scrollY / 40 + "px";
+});

@@ -43,7 +43,7 @@
     }
 
     @media screen and (max-width: 400px) {
-      padding: 2rem 2rem 0 2rem;
+      padding: 2rem 0 2rem 0;
     }
   }
 
@@ -221,6 +221,7 @@
   @media screen and (max-width: 400px) {
     width: 80px;
     top: 18%;
+    transform: translateY(100%);
     right: 0%;
   }
 }

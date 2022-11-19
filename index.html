@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+
+
+
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
@@ -147,6 +151,7 @@
               src="styles/media/figma.png"
               alt="logo figma"
               id="figma-logo"
+              class="parallax"
             
             />
             <!-- <img
@@ -178,17 +183,18 @@
               </div>
               <div class="content--developer--cards">
                 <div class="dev--card" id="dev-card-1">
-                  <span class="hover--span">Valorant agent selection website</span></div>
-                <div class="dev--card" id="dev-card-2"><span class="hover--span">Landing page for NFT collection</span></div>
-                <div class="dev--card" id="dev-card-3"><span class="hover--span">Music player interface (Spotify like)</span></div>
-                <div class="dev--card" id="dev-card-4"><span class="hover--span">Meteo application with API</span></div>
-                <div class="dev--card" id="dev-card-5"><span class="hover--span">Flappy Bird game like</span></div>
-                <div class="dev--card" id="dev-card-6"><span class="hover--span">Marvel Quiz</span></div> 
+                  <a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/Homepage-Valorant" target="_blank"><span class="hover--span">Valorant agent selection website</span></a></div>
+                <div class="dev--card" id="dev-card-2"><a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/Astro%20Digital%20Art" target="_blank"><span class="hover--span">Landing page for NFT collection</span></a></div>
+                <div class="dev--card" id="dev-card-3"><a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/MyMusic" target="_blank"><span class="hover--span">Music player interface (Spotify like)</span></a></div>
+                <div class="dev--card" id="dev-card-4"><a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Appli%20Meteo" target="_blank"><span class="hover--span">Meteo application with API</span></a></div>
+                <div class="dev--card" id="dev-card-5"><a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Cours%20JS%202/JS-flappy-bird" target="_blank"><span class="hover--span">Flappy Bird game like</span></a></div>
+                <div class="dev--card" id="dev-card-6"><a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Cours%20POO/Marvel%20Quiz%20App" target="_blank"<span class="hover--span">Marvel Quiz</span></a></div> 
               </div>
               <img
               src="styles/media/phone.png"
               alt="logo switch"
               id="phone-logo"
+              
               
             />
               
@@ -234,10 +240,15 @@
                   <div class="box__form">
                     <form action="">
                       <label for="name">Name</label>
-                      <input type="text" id="name" placeholder="Your name">
+                      <input type="text" id="from_name" placeholder="Your name" required>
+
+                      <label for="email_id">Mail</label>
+                      <input type="mail" id="email_id" placeholder="Your mail" required>
+
                       <label for="message">Message</label>
-                      <textarea type="text" id="message" placeholder="Your message"></textarea>
-                      <button class="btn RadialGradient" id="btn--form">
+                      <textarea type="text" id="message" placeholder="Your message" required></textarea>
+
+                      <button class="btn RadialGradient" id="btn--form" onclick="SendMail()">
                         Send <i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </form>
@@ -248,11 +259,13 @@
               src="styles/media/chatBubble.png"
               alt="logo bubble chat"
               id="bubbleChat-logo"
+             
               />
               <img
                 src="styles/media/at.png"
                 alt="logo at"
                 id="at-logo" 
+                
               />
             </div>
           </div>
@@ -274,7 +287,16 @@
 
       </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
     <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("dZGt70tC40ba2-n71");
+   })();
+</script>
   </body>
 </html>
