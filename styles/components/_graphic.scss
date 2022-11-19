@@ -1,10 +1,14 @@
 .content--designer {
   height: auto;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
   position: relative;
 
   @media screen and (max-width: 800px) {
     margin: 0 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 2rem 0 0rem 0;
   }
 
   @media screen and (max-width: 400px) {
@@ -203,6 +207,7 @@
   right: 4%;
   width: 240px;
   pointer-events: none;
+  z-index: 0;
 
   @media screen and (max-width: 1000px) {
     width: 200px;
@@ -218,6 +223,12 @@
     width: 120px;
     top: 20%;
     transform: translateY(120%);
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 100px;
+    top: 0;
+    transform: translateY(0%);
   }
 
   @media screen and (max-width: 400px) {

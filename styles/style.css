@@ -508,12 +508,17 @@ footer .footer--container ul li:hover {
 
 .content--designer {
   height: auto;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
   position: relative;
 }
 @media screen and (max-width: 800px) {
   .content--designer {
     margin: 0 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content--designer {
+    padding: 2rem 0 0rem 0;
   }
 }
 @media screen and (max-width: 400px) {
@@ -682,6 +687,7 @@ footer .footer--container ul li:hover {
   right: 4%;
   width: 240px;
   pointer-events: none;
+  z-index: 0;
 }
 @media screen and (max-width: 1000px) {
   #figma-logo {
@@ -700,6 +706,13 @@ footer .footer--container ul li:hover {
     width: 120px;
     top: 20%;
     transform: translateY(120%);
+  }
+}
+@media screen and (max-width: 450px) {
+  #figma-logo {
+    width: 100px;
+    top: 0;
+    transform: translateY(0%);
   }
 }
 @media screen and (max-width: 400px) {
