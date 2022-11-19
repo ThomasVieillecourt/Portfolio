@@ -896,7 +896,7 @@ footer .footer--container ul li:hover {
   text-align: center;
 }
 .content--developer--cards #dev-card-6 {
-  background: url("media/visu5.PNG") no-repeat center center;
+  background: url("/media/visu5.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
