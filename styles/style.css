@@ -868,34 +868,34 @@ footer .footer--container ul li:hover {
   transition: 1s;
 }
 .content--developer--cards #dev-card-1 {
-  background: url("media/valorant.PNG") no-repeat center center;
+  background: url("/media/valorant.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-2 {
-  background: url("media/astro.PNG") no-repeat left center;
+  background: url("/media/astro.PNG") no-repeat left center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-3 {
-  background: url("media/music.PNG") no-repeat center center;
+  background: url("/media/music.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-4 {
-  background: url("media/visu1.PNG") no-repeat center center;
+  background: url("/media/visu1.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
 }
 .content--developer--cards #dev-card-5 {
-  background: url("media/visu3.PNG") no-repeat center center;
+  background: url("/media/visu3.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
 }
 .content--developer--cards #dev-card-6 {
-  background: url("media/visu5.PNG") no-repeat center center;
+  background: url("/media/visu5.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
