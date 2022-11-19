@@ -48,5 +48,5 @@ function SendMail() {
 const Parallax = document.getElementById("figma-logo");
 
 window.addEventListener("scroll", () => {
-  Parallax.style.top = window.scrollY / 14 + "px";
+  Parallax.style.top = window.scrollY / 16 + "px";
 });

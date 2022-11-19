@@ -51,6 +51,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: 30% 40% 30%;
+    padding: 2rem 0 0 0;
     grid-template-areas:
       "grid1 grid1 grid1"
       "grid2 grid3 grid3"
@@ -58,7 +59,7 @@
 
     @media screen and (max-width: 1000px) {
       grid-template-columns: 100%;
-      padding: 0 2rem;
+      padding: 2rem 2rem 0 2rem;
       grid-template-areas:
         "grid1"
         "grid3"
@@ -221,8 +222,8 @@
 
   @media screen and (max-width: 400px) {
     width: 80px;
-    top: 18%;
-    transform: translateY(100%);
+    top: 0;
+    transform: translateY(150%);
     right: 0%;
   }
 }

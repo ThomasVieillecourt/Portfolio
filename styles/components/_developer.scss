@@ -46,6 +46,7 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       word-spacing: 2rem;
+      padding: 2rem 0 0 0;
 
       @media screen and (max-width: 400px) {
         flex-wrap: wrap;
@@ -243,7 +244,7 @@
 
   #phone-logo {
     position: absolute;
-    top: -6%;
+    top: -2%;
     right: 2%;
     width: 300px;
     pointer-events: none;
@@ -257,7 +258,7 @@
     }
     @media screen and (max-width: 400px) {
       width: 120px;
-      top: 12%;
+      top: 14%;
       right: -6%;
     }
   }

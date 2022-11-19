@@ -159,11 +159,14 @@ p {
   color: $Blanc;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.4rem;
-  width: 225px;
-  height: 56px;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
   box-shadow: 4px 4px 8px rgba(17, 17, 17, 0.4);
+
+  i {
+    padding: 0 0 0 0.5rem;
+  }
 
   &:hover {
     background: none;

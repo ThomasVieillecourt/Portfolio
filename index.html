@@ -121,9 +121,9 @@
             <div class="content--designer--text">
               <h2>Graphic designer</h2>
               <p>Few case study available on my Behance profile.</p>
-              <button class="btn RadialGradient">
+              <a class="btn RadialGradient" href="https://www.behance.net/thomasvieillecourt" target="_blank">
                 Behance profile <i class="fa-solid fa-arrow-right"></i>
-              </button>
+              </a>
             </div>
 
             <!-- Contenu section graphisme -->
@@ -167,9 +167,9 @@
             <div class="content--developer--text">
                 <h2>front-end developer</h2>
                 <p>All my projects are available on my GitHub profile</p>
-                <button class="btn RadialGradient">
+                <a class="btn RadialGradient" href="https://github.com/ThomasVieillecourt" target="_blank">
                   GitHub profile <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                </a>
             </div>
 
               <div class="content--developer--lang">
@@ -182,13 +182,13 @@
                 </ul>
               </div>
               <div class="content--developer--cards">
-                <div class="dev--card" id="dev-card-1">
-                  <a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/Homepage-Valorant" target="_blank"><span class="hover--span">Valorant agent selection website</span></a></div>
-                <div class="dev--card" id="dev-card-2"><a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/Astro%20Digital%20Art" target="_blank"><span class="hover--span">Landing page for NFT collection</span></a></div>
-                <div class="dev--card" id="dev-card-3"><a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/MyMusic" target="_blank"><span class="hover--span">Music player interface (Spotify like)</span></a></div>
-                <div class="dev--card" id="dev-card-4"><a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Appli%20Meteo" target="_blank"><span class="hover--span">Meteo application with API</span></a></div>
-                <div class="dev--card" id="dev-card-5"><a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Cours%20JS%202/JS-flappy-bird" target="_blank"><span class="hover--span">Flappy Bird game like</span></a></div>
-                <div class="dev--card" id="dev-card-6"><a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Cours%20POO/Marvel%20Quiz%20App" target="_blank"<span class="hover--span">Marvel Quiz</span></a></div> 
+                <a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/Homepage-Valorant" target="_blank"><div class="dev--card" id="dev-card-1">
+                  <span class="hover--span">Valorant agent selection website</span></div></a>
+                  <a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/Astro%20Digital%20Art" target="_blank"><div class="dev--card" id="dev-card-2"><span class="hover--span">Landing page for NFT collection</span></div></a>
+                <a href="https://github.com/ThomasVieillecourt/Projet-Web-App/tree/main/MyMusic" target="_blank"><div class="dev--card" id="dev-card-3"><span class="hover--span">Music player interface (Spotify like)</span></div></a>
+                <a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Appli%20Meteo" target="_blank"><div class="dev--card" id="dev-card-4"><span class="hover--span">Meteo application with API</span></div></a>
+                <a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Cours%20JS%202/JS-flappy-bird" target="_blank"><div class="dev--card" id="dev-card-5"><span class="hover--span">Flappy Bird game like</span></div></a>
+                <a href="https://github.com/ThomasVieillecourt/Cours-Front-end/tree/main/Cours%20POO/Marvel%20Quiz%20App" target="_blank"><div class="dev--card" id="dev-card-6"> <span class="hover--span">Marvel Quiz</span></div> </a>
               </div>
               <img
               src="styles/media/phone.png"
@@ -248,7 +248,7 @@
                       <label for="message">Message</label>
                       <textarea type="text" id="message" placeholder="Your message" required></textarea>
 
-                      <button class="btn RadialGradient" id="btn--form" onclick="SendMail()">
+                      <button class="btn RadialGradient" id="btn--form" onclick="SendMail()" type="submit">
                         Send <i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </form>
