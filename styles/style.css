@@ -693,6 +693,7 @@ footer .footer--container ul li:hover {
   #figma-logo {
     width: 120px;
     top: 20%;
+    transform: translateY(120%);
   }
 }
 @media screen and (max-width: 400px) {
@@ -895,7 +896,7 @@ footer .footer--container ul li:hover {
   text-align: center;
 }
 .content--developer--cards #dev-card-6 {
-  background: url("/media/visu5.PNG") no-repeat center center;
+  background: url("media/visu5.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
@@ -941,14 +942,14 @@ footer .footer--container ul li:hover {
 }
 @media screen and (max-width: 600px) {
   .content--developer #phone-logo {
-    width: 180px;
-    top: 12%;
+    width: 130px;
+    top: 16%;
   }
 }
 @media screen and (max-width: 400px) {
   .content--developer #phone-logo {
     width: 120px;
-    top: 16%;
+    top: 12%;
     right: -6%;
   }
 }
@@ -1169,6 +1170,7 @@ footer .footer--container ul li:hover {
 }
 @media screen and (max-width: 600px) {
   .content--contact #at-logo {
-    width: 120px;
+    width: 110px;
+    bottom: -4%;
   }
 }/*# sourceMappingURL=style.css.map */
