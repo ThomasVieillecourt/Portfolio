@@ -357,7 +357,7 @@ p {
 }
 
 .container {
-  background: url("/media/bg-gradient.png") no-repeat center center fixed;
+  background: url("media/bg-gradient.png") no-repeat center center fixed;
   background-size: cover;
 }
 .container .banner__container {
@@ -573,7 +573,7 @@ footer .footer--container ul li:hover {
 }
 .content--designer #grid1 {
   grid-area: grid1;
-  background: url("/media/mockup-mob-test.png") no-repeat center center;
+  background: url("media/mockup-mob-test.png") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   border-radius: 12px;
@@ -619,13 +619,13 @@ footer .footer--container ul li:hover {
 }
 .content--designer #grid3 {
   grid-area: grid3;
-  background: url("/media/Mockup_desktop_V1.png") no-repeat left center;
+  background: url("media/Mockup_desktop_V1.png") no-repeat left center;
   background-size: cover;
   border-radius: 12px;
 }
 .content--designer #grid4 {
   grid-area: grid4;
-  background: url("/media/Mockup_VisitCard_V1.png") no-repeat left center;
+  background: url("media/Mockup_VisitCard_V1.png") no-repeat left center;
   background-size: cover;
   cursor: pointer;
   border-radius: 12px;
@@ -869,34 +869,34 @@ footer .footer--container ul li:hover {
   transition: 1s;
 }
 .content--developer--cards #dev-card-1 {
-  background: url("/media/valorant.PNG") no-repeat center center;
+  background: url("media/valorant.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-2 {
-  background: url("/media/astro.PNG") no-repeat left center;
+  background: url("media/astro.PNG") no-repeat left center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-3 {
-  background: url("/media/music.PNG") no-repeat center center;
+  background: url("media/music.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-4 {
-  background: url("/media/visu1.PNG") no-repeat center center;
+  background: url("media/visu1.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
 }
 .content--developer--cards #dev-card-5 {
-  background: url("/media/visu3.PNG") no-repeat center center;
+  background: url("media/visu3.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
 }
 .content--developer--cards #dev-card-6 {
-  background: url("/media/visu5.PNG") no-repeat center center;
+  background: url("media/visu5.PNG") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
