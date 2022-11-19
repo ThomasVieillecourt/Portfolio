@@ -357,7 +357,7 @@ p {
 }
 
 .container {
-  background: url("media/bg-gradient.png") no-repeat center center fixed;
+  background: url("./media/bg-gradient.png") no-repeat center center fixed;
   background-size: cover;
 }
 .container .banner__container {
