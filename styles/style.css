@@ -914,17 +914,17 @@ footer .footer--container ul li:hover {
   cursor: pointer;
 }
 .content--developer--cards #dev-card-2 {
-  background: url("media/nft.PNG") no-repeat center center;
+  background: url("media/nft.jpg") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-3 {
-  background: url("media/musicApp.PNG") no-repeat center center;
+  background: url("media/musicApp.jpg") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .content--developer--cards #dev-card-4 {
-  background: url("media/meteoApp.PNG") no-repeat center center;
+  background: url("media/meteoApp.jpg") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   text-align: center;
