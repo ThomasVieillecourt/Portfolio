@@ -20,9 +20,6 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
-const validRegex =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
 function SendMail() {
   const params = {
     from_name: document.getElementById("from_name").value,
@@ -30,10 +27,17 @@ function SendMail() {
     message: document.getElementById("message").value,
   };
 
+  const validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
   if (params.email_id.match(validRegex)) {
     emailjs
       .send("service_4r6hzh5", "template_azodpme", params)
+
       .then(function () {
+        document.getElementById("from_name").value = "";
+        document.getElementById("email_id").value = "";
+        document.getElementById("message").value = "";
         alertify.set("notifier", "position", "bottom-center");
         alertify.success("Your message was send Successfully.");
       });

@@ -35,6 +35,11 @@
       z-index: 2;
       text-align: center;
 
+      @media screen and (max-width: 500px) {
+        background-color: $Blanc;
+        color: $NoirNuit;
+      }
+
       &:hover {
         background-color: $Blanc;
       }
