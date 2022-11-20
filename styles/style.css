@@ -141,30 +141,18 @@ p {
 
 .RadialGradient {
   background: rgb(17, 22, 138);
-  background: linear-gradient(
-    320deg,
-    rgba(17, 22, 138, 0.8) 10%,
-    rgba(134, 17, 160, 0.8) 90%
-  );
+  background: linear-gradient(320deg, rgba(17, 22, 138, 0.8) 10%, rgba(134, 17, 160, 0.8) 90%);
 }
 
 .secondGradient {
   background: rgb(17, 22, 138);
-  background: linear-gradient(
-    320deg,
-    rgb(17, 22, 138) 10%,
-    rgb(134, 17, 160) 90%
-  );
+  background: linear-gradient(320deg, rgb(17, 22, 138) 10%, rgb(134, 17, 160) 90%);
 }
 
 .btn {
   border: none;
   background: rgb(17, 22, 138);
-  background: linear-gradient(
-    320deg,
-    rgba(17, 22, 138, 0.8) 10%,
-    rgba(134, 17, 160, 0.8) 90%
-  );
+  background: linear-gradient(320deg, rgba(17, 22, 138, 0.8) 10%, rgba(134, 17, 160, 0.8) 90%);
   border-radius: 50px;
   color: #f3f3f3;
   font-family: "Raleway", sans-serif;
@@ -185,11 +173,11 @@ p {
 }
 .btn:hover span {
   -webkit-animation-name: handMoove;
-  animation-name: handMoove;
+          animation-name: handMoove;
   -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
 }
@@ -391,7 +379,7 @@ p {
 }
 @media screen and (max-width: 400px) {
   .container .banner__container {
-    padding: 10rem 0 0 0;
+    padding: 0 0 10rem 0;
   }
 }
 .container .banner__container--text {
@@ -400,18 +388,19 @@ p {
   align-items: center;
   padding: 0 0 3rem 0;
 }
-.container .banner__container .btn {
+.container .banner__container #contact-btn {
   position: relative;
   z-index: 2;
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .container .banner__container .btn {
-    background-color: #f3f3f3;
+  .container .banner__container #contact-btn {
+    background-color: #f3f3f3 !important;
     color: #04040f;
+    background: none;
   }
 }
-.container .banner__container .btn:hover {
+.container .banner__container #contact-btn:hover {
   background-color: #f3f3f3;
 }
 .container .banner__container--img {
@@ -639,8 +628,7 @@ footer .footer--container ul li:hover {
   border: 2px solid #f3f3f3;
   transition: 0.25s;
 }
-.content--designer #grid2 a:hover,
-.content--designer #grid2 a:focus {
+.content--designer #grid2 a:hover, .content--designer #grid2 a:focus {
   color: #04040f;
 }
 .content--designer #grid2 .fill:hover,
@@ -692,8 +680,7 @@ footer .footer--container ul li:hover {
   border: 2px solid #f3f3f3;
   transition: 0.25s;
 }
-.content--designer #grid5 a:hover,
-.content--designer #grid5 a:focus {
+.content--designer #grid5 a:hover, .content--designer #grid5 a:focus {
   color: #04040f;
 }
 .content--designer #grid5 .fill:hover,
@@ -739,7 +726,7 @@ footer .footer--container ul li:hover {
   #figma-logo {
     width: 80px;
     top: 0;
-    transform: translateY(200%);
+    transform: translateY(110%);
     right: 0%;
   }
 }
@@ -989,7 +976,7 @@ footer .footer--container ul li:hover {
 @media screen and (max-width: 400px) {
   .content--developer #phone-logo {
     width: 120px;
-    top: 14%;
+    top: 12%;
     right: -6%;
   }
 }
@@ -1141,11 +1128,7 @@ footer .footer--container ul li:hover {
 .content--contact .form--container .box__form form #message::-moz-placeholder {
   font-family: "Raleway", sans-serif;
 }
-.content--contact
-  .form--container
-  .box__form
-  form
-  #message:-ms-input-placeholder {
+.content--contact .form--container .box__form form #message:-ms-input-placeholder {
   font-family: "Raleway", sans-serif;
 }
 .content--contact .form--container .box__form form #message::placeholder {
@@ -1217,4 +1200,4 @@ footer .footer--container ul li:hover {
     width: 110px;
     bottom: -4%;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

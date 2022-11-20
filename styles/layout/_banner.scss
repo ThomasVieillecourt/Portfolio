@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 400px) {
-      padding: 10rem 0 0 0;
+      padding: 0 0 10rem 0;
     }
 
     &--text {
@@ -30,14 +30,15 @@
       padding: 0 0 3rem 0;
     }
 
-    .btn {
+    #contact-btn {
       position: relative;
       z-index: 2;
       text-align: center;
 
       @media screen and (max-width: 500px) {
-        background-color: $Blanc;
+        background-color: $Blanc !important;
         color: $NoirNuit;
+        background: none;
       }
 
       &:hover {
