@@ -104,6 +104,9 @@ a {
   color: #f3f3f3;
   cursor: pointer;
 }
+a:focus {
+  border: 2px solid #cc8405;
+}
 
 p {
   font-family: "Raleway", sans-serif;
@@ -359,7 +362,7 @@ p {
 }
 
 .container {
-  background: url("media/bggradient.png") no-repeat center center fixed;
+  background: url("media/bgGradient.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 .container .banner__container {
@@ -412,7 +415,8 @@ p {
   text-align: center;
 }
 .container .banner__container--img img {
-  width: 538px;
+  width: 600px;
+  transform: translateY(1%);
 }
 @media screen and (max-width: 800px) {
   .container .banner__container--img img {
@@ -474,12 +478,6 @@ p {
   z-index: 0;
   right: 0;
   top: 10%;
-}
-.content__container #circle-v-bg {
-  position: absolute;
-  z-index: 0;
-  right: 0;
-  top: 9%;
 }
 
 footer {
@@ -591,7 +589,7 @@ footer .footer--container ul li:hover {
 }
 .content--designer #grid1 {
   grid-area: grid1;
-  background: url("media/mockup-mob-test.png") no-repeat center center;
+  background: url("media/mockupMobile.jpg") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   border-radius: 12px;
@@ -637,13 +635,13 @@ footer .footer--container ul li:hover {
 }
 .content--designer #grid3 {
   grid-area: grid3;
-  background: url("media/Mockup_desktop_V1.png") no-repeat left center;
+  background: url("media/mockupDesktop.jpg") no-repeat left center;
   background-size: cover;
   border-radius: 12px;
 }
 .content--designer #grid4 {
   grid-area: grid4;
-  background: url("media/Mockup_VisitCard_V1.png") no-repeat left center;
+  background: url("media/visitCards.jpg") no-repeat left center;
   background-size: cover;
   cursor: pointer;
   border-radius: 12px;
