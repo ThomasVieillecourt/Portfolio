@@ -90,6 +90,10 @@
     background-size: cover;
     cursor: pointer;
     border-radius: 12px;
+
+    @media screen and (max-width: 600px) {
+      background: url("media/imgMobile.jpg") no-repeat center center;
+    }
   }
   #grid2 {
     grid-area: grid2;

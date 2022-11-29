@@ -594,6 +594,11 @@ footer .footer--container ul li:hover {
   cursor: pointer;
   border-radius: 12px;
 }
+@media screen and (max-width: 600px) {
+  .content--designer #grid1 {
+    background: url("media/imgMobile.jpg") no-repeat center center;
+  }
+}
 .content--designer #grid2 {
   grid-area: grid2;
   background-color: #04040f;
