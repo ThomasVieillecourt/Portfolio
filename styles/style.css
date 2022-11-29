@@ -589,7 +589,7 @@ footer .footer--container ul li:hover {
 }
 .content--designer #grid1 {
   grid-area: grid1;
-  background: url("media/mockupMobile.jpg") no-repeat center center;
+  background: url("media/pixl.jpg") no-repeat center center;
   background-size: cover;
   cursor: pointer;
   border-radius: 12px;
